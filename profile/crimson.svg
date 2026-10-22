@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+	<defs>
+		<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#1f080c"/>
+			<stop offset="1" stop-color="#070203"/>
+		</linearGradient>
+		<radialGradient id="heart" cx="0.5" cy="0.42" r="0.5">
+			<stop offset="0" stop-color="#c8102e" stop-opacity="0.32"/>
+			<stop offset="1" stop-color="#c8102e" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#ff4d5e" stop-opacity="0.16"/>
+			<stop offset="0.5" stop-color="#ff4d5e" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="blood" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#ff4057"/>
+			<stop offset="0.55" stop-color="#d4112b"/>
+			<stop offset="1" stop-color="#8e0a1d"/>
+		</linearGradient>
+		<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="2.5"/>
+		</filter>
+		<filter id="bloom" x="-80%" y="-80%" width="260%" height="260%">
+			<feGaussianBlur stdDeviation="7"/>
+		</filter>
+		<radialGradient id="void" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" stop-color="#1a0609"/>
+			<stop offset="0.85" stop-color="#050102"/>
+			<stop offset="1" stop-color="#2a070d"/>
+		</radialGradient>
+		<radialGradient id="haze" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0.55" stop-color="#c8102e" stop-opacity="0.55"/>
+			<stop offset="1" stop-color="#c8102e" stop-opacity="0"/>
+		</radialGradient>
+		<filter id="corona" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="4"/>
+		</filter>
+		<filter id="flare" x="-300%" y="-300%" width="700%" height="700%">
+			<feGaussianBlur stdDeviation="4"/>
+		</filter>
+	</defs>
+	<circle cx="64" cy="64" r="62" fill="url(#haze)"/>
+	<circle cx="64" cy="64" r="44" fill="none" stroke="#ff4d5e" stroke-width="6" filter="url(#corona)"/>
+	<circle cx="64" cy="64" r="47" fill="none" stroke="#c8102e" stroke-width="12" stroke-opacity="0.6" filter="url(#bloom)"/>
+	<circle cx="64" cy="64" r="44" fill="url(#void)"/>
+	<circle cx="64" cy="64" r="44" fill="none" stroke="#e3132f" stroke-width="1.5"/>
+	<path d="M30 52a36 36 0 0 1 22-20" fill="none" stroke="#ff4d5e" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+	<circle cx="95" cy="33" r="6" fill="#ff4d5e" filter="url(#flare)"/>
+	<circle cx="95" cy="33" r="2.2" fill="#ffd0d6"/>
+	<path d="M66.26 41Q69.41 41 71.65 41.16Q73.89 41.32 75.76 41.64Q77.63 41.97 79.62 42.51L78.82 49.76Q76.73 49.63 74.94 49.57Q73.15 49.51 71.12 49.45Q69.09 49.41 66.26 49.41Q63 49.41 61.15 50.71Q59.3 52.02 58.54 55.19Q57.78 58.36 57.78 64Q57.78 69.64 58.54 72.81Q59.3 75.98 61.15 77.29Q63 78.59 66.26 78.59Q70.73 78.59 73.76 78.46Q76.79 78.33 79.75 77.98L80.56 85.2Q77.5 86.16 74.27 86.58Q71.05 87 66.26 87Q59.39 87 55.25 84.78Q51.11 82.56 49.28 77.53Q47.44 72.51 47.44 64Q47.44 55.49 49.28 50.47Q51.11 45.44 55.25 43.22Q59.39 41 66.26 41Z" fill="#c8102e" fill-opacity="0.8" filter="url(#bloom)"/>
+	<path d="M66.26 41Q69.41 41 71.65 41.16Q73.89 41.32 75.76 41.64Q77.63 41.97 79.62 42.51L78.82 49.76Q76.73 49.63 74.94 49.57Q73.15 49.51 71.12 49.45Q69.09 49.41 66.26 49.41Q63 49.41 61.15 50.71Q59.3 52.02 58.54 55.19Q57.78 58.36 57.78 64Q57.78 69.64 58.54 72.81Q59.3 75.98 61.15 77.29Q63 78.59 66.26 78.59Q70.73 78.59 73.76 78.46Q76.79 78.33 79.75 77.98L80.56 85.2Q77.5 86.16 74.27 86.58Q71.05 87 66.26 87Q59.39 87 55.25 84.78Q51.11 82.56 49.28 77.53Q47.44 72.51 47.44 64Q47.44 55.49 49.28 50.47Q51.11 45.44 55.25 43.22Q59.39 41 66.26 41Z" fill="#e3132f" fill-opacity="0.8" filter="url(#glow)"/>
+	<path d="M66.26 41Q69.41 41 71.65 41.16Q73.89 41.32 75.76 41.64Q77.63 41.97 79.62 42.51L78.82 49.76Q76.73 49.63 74.94 49.57Q73.15 49.51 71.12 49.45Q69.09 49.41 66.26 49.41Q63 49.41 61.15 50.71Q59.3 52.02 58.54 55.19Q57.78 58.36 57.78 64Q57.78 69.64 58.54 72.81Q59.3 75.98 61.15 77.29Q63 78.59 66.26 78.59Q70.73 78.59 73.76 78.46Q76.79 78.33 79.75 77.98L80.56 85.2Q77.5 86.16 74.27 86.58Q71.05 87 66.26 87Q59.39 87 55.25 84.78Q51.11 82.56 49.28 77.53Q47.44 72.51 47.44 64Q47.44 55.49 49.28 50.47Q51.11 45.44 55.25 43.22Q59.39 41 66.26 41Z" fill="url(#blood)" stroke="#ff5a6c" stroke-opacity="0.35" stroke-width="0.6"/>
+	<circle cx="102" cy="30" r="1.2" fill="#ff4d5e" fill-opacity="0.7"/>
+	<circle cx="110" cy="46" r="0.8" fill="#ff4d5e" fill-opacity="0.5"/>
+	<circle cx="22" cy="92" r="1" fill="#ff4d5e" fill-opacity="0.6"/>
+	<circle cx="30" cy="104" r="0.7" fill="#ff4d5e" fill-opacity="0.4"/>
+	<circle cx="96" cy="108" r="0.9" fill="#ff4d5e" fill-opacity="0.5"/>
+	<circle cx="18" cy="40" r="0.6" fill="#ff4d5e" fill-opacity="0.35"/>
+</svg>
